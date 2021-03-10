@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3333ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #515151;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>De top 10 merken </h2>
+</header>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #f00;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="top10.html">top 10</a></li>
+  <li><a href="top10500.html">top 10 onder 500</a></li>
+  <li><a href="top101000.html">top 10 boven 1000</a></li>
+</ul>
+
+  <article>
+    <h1>Nummer 10</h1>
+    <p>OMEGA <p>
+	<p>OMEGA heeft een geweldige reputatie. Sinds de oprichting in 1848 is het merk aanwezig op enkele van de meest impactvolle momenten ter wereld. Al meer dan 170 jaar zijn hun horloges aanwezig in de wereldwijde geschiedenis en sieren ze de polsen van 's werelds machtigste leiders en acteurs James Bond heeft altijd al een OMEGA gedragen in zijn films.<p>
+	<img id="wp_thbn_13" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="100" width="170" alt="" data-atf="1">
+  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 9</h1>
+    <p>Chopard<p>
+	<p>Chopard staat bekend om hun luxe Swizz-horloges. Louis-Ulysse Chopard begon zijn leven als een ambachtelijke horlogemaker en creeerde uurwerken die bekend werden om hun innovatieve ontwerpen en artistieke waarde.<p>
+	<img id="wp_thbn_13" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="65" width="151" alt="" data-atf="1">
+  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Nummer 8</h1>
+    <p>Longines <p>
+	<p>Longines is een Zwitsers horlogemerk. Het werd in 1832 door Ernest Francillon in Saint-Imier opgericht. Het merk staat bekend om zijn horloges voor piloten en om de precisie en elegantie van zijn horloges.<p>
+	<img id="wp_thbn_13" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="37" width="151" alt="" data-atf="1">
+	</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 7</h1>
+    <p>IWC Schaffhausen<p>
+	<p>De Bostoniaanse horlogemaker Ariosto Jones richtte IWC Schaffhausen op in 1868 en verenigde progressieve Amerikaanse productiemogelijkheden met de handen op de vaardigheden, het ontwerp en het vakmanschap van Zwitserse horlogemakers. Deze internationale aangelegenheid creeert horloges met onberispelijke normen van esthetiek en functionaliteit.<p>
+	<img id="wp_thbn_22" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="59" width="151" alt="" data-atf="1">
+  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 6</h1>
+    <p> Breitling<p>
+	<p>Breitling is een merknaam die synoniem is met de markt van luxe horlogemerken en een zeer begeerlijk stuk uitrusting voor zowel oude horlogeliefhebbers als aspirant-horlogeliefhebbers. Toch staat het merk bekend om zoveel meer dan alleen wenselijkheid en een onberispelijke look & feel.<p>
+<img id="wp_thbn_22" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="71" width="151" alt="" data-atf="1">
+  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 5</h1>
+    <p>Cartier<p>
+	<p>Cartier is onweerlegbaar een van 's werelds meest herkenbare luxe horloge- en sieradenmerken, tot dusver niet vanwege zijn positionering in de populaire cultuur en de met beroemdheden doordrenkte media.<p>
+	<img alt="cartier-logo | Reckon Talk" class="n3VNCb" src="data:image/png;base64,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" jsname="HiaYvf" jsaction="load:XAeZkd;" data-iml="21432.649999999965" style="width:100height: 50px; margin: 1.4px 0px;">
+	  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 4</h1>
+    <p>Vacheron Constantin<p>
+	<p>Vacheron Constantin dateert uit 1755 en is een van de oudste fabrikanten van luxe horloges en klokkenmakers ter wereld. Net als veel van zijn concurrenten werd het merk opgericht in Geneve, Zwitserland door Jean-Marc Vacheron.<p>
+	<div class="eoNQle mod NFQFxe RsqAUb" jsmodel="O1a5H" jscontroller="IkchZc" jsshadow="" jsaction="PdWSXe:h5M12e;rcuQ6b:npT2md" jsdata="X2sNs;;A3m1oo"><div jsslot=""><a href="/search?q=Vacheron+Constantin&amp;sa=X&amp;bih=969&amp;biw=1365&amp;rlz=1C1GCEA_enNL929NL929&amp;hl=nl&amp;sxsrf=ALeKk00EEEWesxTIKuHLGTk1m1keHNZcJQ:1606130366122&amp;tbm=isch&amp;source=iu&amp;ictx=1&amp;fir=AHAaOhiUdlV1iM%252CW13e-Daz9KtGvM%252C%252Fm%252F04g8rl&amp;vet=1&amp;usg=AI4_-kQwtE_1_M0mEmjCsemN8v-LJ4r33g&amp;ved=2ahUKEwi3wr3vxZjtAhXEyaQKHbvPD-oQ_B16BAgYEAI#imgrc=AHAaOhiUdlV1iM" tabindex="0"><g-img class="ivg-i PZPZlf" data-docid="AHAaOhiUdlV1iM:" data-lpage="https://www.vacheron-constantin.com/etc/designs/richemont-vac/assets/images/logo-vac.svg" data-tsourceid="10" data-attrid="image" jsaction="trigger.PdWSXe" data-ved="2ahUKEwi3wr3vxZjtAhXEyaQKHbvPD-oQxfoBMBN6BAgYEAM"><img id="wp_thbn_19" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAXCAMAAAAx8S2TAAAATlBMVEX////CjGXDjmjFkm78+ffs3dPImnn17unBimLq2s/Hl3XdwrDGlXHYuKPEkGvau6fUsJjx5t/Rq5Hl0MPhybnNooXPp4v58/C+hFjKnX/fpuAUAAADHklEQVRIie1U2bakIAwMmwgIiKC0//+jU0Hv0n3OfZm5b9M53SJbpVKJIXrb2972V6Y/H79tzhJ1x/8+fLgKN9bwmyYDw+AwWN41teBZynWFTQV3hBvK1mvRVT7MNywWdK1AZiSDe24AXPBlLPLB74i3TZkoePwFw2svRLIUFDAfhVIS4mFplkIIXN0w4PghQPVxqRTUIm+9HHYPjCfGSuQB2gRpJaQsehYqzSvZGasUZwt4u85JiZmWAERcn590Dzscwdm+MGZcij33QdTOBWqUYrSeWzHg70SzGaubqmRulK58vJHU1p2s1GS1K5ifylBV1Kbezw2KTLFYLCSIl1UGvLUleyg1hYHo5BMvI4lmQ1rEhHUO1Alq4NXBINWRW+xTXOnYLn03Pw1eJsJHhLzksGMEZutKHkHyxdMfzAsrZDgVEz/WdQJk9gvzIqrLtbH585WXFtayD2GFuQ6ziEuMayq0xForeDndp3axhL5HPM3Qa5FrKTuikA05m+gzCGYzhWRZr5TNVTBh8GWeeVvrcNVuXgeEM8+86KzuxNGJ9gBeo/hxXqlFFfLIvySNMpA7ImAHcH9EdxhkiqJfRPL4KXsVBCd2hJY3mlqI4IXakdLdvMpsWaJ8lOWFV91eeYWYofy59nh+6TVdeVSt9w5CuWZZaMCHE7woNUbxcjOXXlCynTevcuvVtAjst7sz3byasEgM5R0z+Z1XJNnSMy8z7YZ6UlIpTTNcOznqyz7XFyrz5ArfI6MEn7i+7Lf6GvWxrYgFp5bG7lZ8k86wTP3itS1SAgi86pKeeeVFPfPSCoD4kGpNhrZJ6/3792hL0YMXPDWJLwzvQOnqjk6rUef8JjMVCJeR/wDd4a4kjxrXuHjrlbJzx8q86JWXVS+8aEfSVi5aeLAJLas89y+nH1AxAfaUSUKZHaW73n2iffWvJpScRpyJu9zCFxJ1qfxojZibB3OZCRUzqF+EscGIm3jhxc3WfLRhm4P96veOrZMbDRtLLVb6ud+72EaFhcibH/3ehjzOYs5Tvnn3+8vPD/3+32yE2H8R8G1v+z/tD98ZKjGNaWPzAAAAAElFTkSuQmCC" class="rISBZc M4dUYb" height="150"width="300" alt="" data-atf="1"></g-img></a></div></div>
+	  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 3</h1>
+    <p>Audemars Piguet<p>
+	<p>Dit luxemerk werd in 1873 geboren door technologiestudent Jules-Louis Audemars en economiestudent Edward-Auguste Piguet, als een experiment in fabricage, precisiewerk en kwaliteit. Tegenwoordig kloppen deze waarden nog steeds en zijn ze een deel van de reden waarom hun kenmerkende Royal Oak of een Millenary-stuk zo wenselijk is voor meerdere generaties.<p>
+	<img id="wp_thbn_25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAABrCAMAAABNEeApAAAAWlBMVEUAAAASEhL///8FBQUVFRVMTExDQ0PPz887OzugoKCampqkpKTLy8s/Pz/U1NTZ2dm7u7v4+Pitra1TU1NpaWlgYGDr6+srKyuKioocHByBgYHi4uIkJCR3d3ea/vDEAAABTUlEQVRoge3WXWuDQBCF4XG27sZEzar5bNr//zfrGoVS6MVhtmSh5wVFb4aHUVCRIqteDfglurDowqILiy4surDowqILiy4surDowqILiy4surDowqILiy4surDowqIL6x+4fLPfHw7paCbzsJz7alVPXvXcXYardVZmV12pdtLPh7GMrroNWr+pejnqzjosk8s5kXi7rK6+HJfIPbihxH29j6LFueaFPSZ57msnoRyX+CCrK456NI/N5hrPm2v6uNvHZXvvhyY22/uVoVz7+oxd7YfyXCGdynP5Hy5nHZjDNSP6W7pI38bF5ZwVZnclQauPq9RBtY2D9qfnd+nFru2hfZeUsK/FkVRu2ZJz662tP/qPLtVlji4surDowqILiy4surDowqILiy4surDowqILiy4surDowqILiy4surDowqILiy4surDowqq+AMTnBtQtUbVTAAAAAElFTkSuQmCC" class="rISBZc M4dUYb" height="107" width="151" alt="" data-atf="1">
+	  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 2</h1>
+    <p>Patek Philippe<p>
+	<p>Patek Philippe is een van de meest prestigieuze merken ter wereld. De laatste onafhankelijke horlogefabrikant in familiebezit in Geneve, zou 's werelds beste uurwerken maken.<p>
+	<img id="wp_thbn_22" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAABSCAMAAABuZLZMAAAAkFBMVEX///8AAAD19fXo6Oi7urrh4eGcm5uNjIxNS0v5+fm+vb3X19e1tLRLSEheXFzEw8NnZmbPz8+TkpKmpKQ/PT29pGuHhYU1MzOtjTywkESqqqogHR1GQ0MQCwsZFRXSwZgqJyf39OzYyq7q4tBycHB6eXlVU1Pu6Nq3m1WriTK6oF/g1brRwaDMuInErXrm3MXMSrRaAAAGtElEQVRoge2Yi5KiOhCGEyKOUUBAlIuAoNzEUd//7U53EoT1OO7OqZnFqjN/lQohl49Op9ORkC9TnX9dX18o3rYvCbY7Bu9jMzzSOQjOYzP8S5yQ0zHYi4sX0umyq/OmyfPz5TQ2y0CHAPTeNu9hEBwPY9P02gdheDyqz35sml6HMGxO+zDcX8MweCF7kfNxTcgFPuvjS61Jfg5rst+RPLiMjaKU1+KHtzvk2qmQP/qWBE61FmR1wPc73grnqtdhOG7oz5sgDBqE4cJewrlqKAzDUS2WNyFKxlLgQl1F0bhcZBcE1/o9uBw6rsMleK9PzZhbJb8ect6GsCPm17zj4le8h5QnPxy0UbDq9fHY7Nrgcj1I7c7q4noJ2l1zPLb1GFyQb8F2CAG+XUs1jbpo0e9xa9qNwUVObbsDo506D9/fMPbh5bBr27F2Ss5JHYbgTvv1teM6rPcc/Cs84NPRlF8gSX1vmtPN7/MTpDtn2MfHgyIyfgXHC1LlyFUL1uP4cXUdqKyet7AP5a2YO1gRwbj2Ivl5LYP9qUF7KVc/Xc5jb9xKNexFwHV9pSya4Fbd5OT9THjTvBIYb4JWbD5kHTQvMoOoEyzAyzoI1xcI8i90UEMujA1i83mh8xCkh8GlbtsawuwrzSNE+QOcOWDzOZxeCUsIUsSf/3M+oesxeKGlONBunDTwtxoz4frRj370f5S+FGLqlk0cLJzMO0104kykDEaY4ahmxkT9/eCI9o68W85VqQ7t4BlW0ubObbDJAuLcsAWXw8sa3FAjQS9TKjWTjzZ0C/VXoigR31NSqSoeIwa15AAJXamxPPW0gFfT4kQxvNEN3FYUOBxqdf+grLCUxapFCcV6Jq8TF6IyU0PSNwJc9sSYGAXN8AWZn9IJIYvVahXZiRXB74JYySZCwRiKi81wACmTTqGDaEYtTrTZVnG52LdmSS77V67Z1oUWK5+WwOVnEdy4Gbw/cG0NHGjFkGuqDFXAd0TNxFKdTLuxrWTZQUguzafuzRFMHBtUgQX/kCsTLbQYTKD7vnio+1CV0ezW7VQNoScmUM7oMpOtsOsPuDSb2rf2wCVRIij8Uy7nNjRwSdcuaPSYK/PAw8FYG2XAj7kq4Rn3XBNafZIrgrsbVwnDPuJy6EyD3gwyTzz+hMsGcDr8J7Cbxyk4wue43gDlxmXD0PdcnGvgyS54PSw5EtPlPVe5moIkl0szMPmv9oIOHB+aAdd0idFlWfyGC1osU/AYwQU3UQq/4PdioLngMsuysDNaaTBqKV6juONK5eoVXD71jWTGBlyJDR1YWxEYZqoqTZJn61G0SNBhdH9bwA2EorlYj6KxLbgyz/PiKuLo9TglLPH1O3ttDJTgSmMdfHQ64Ep96MC08SXBXhuMLRBkntlLtihEBPe3cO3NSjEyzSY4kCO4Nowx0XCRmKJ1KWPmY//aipHS3sNMOu86+GP/6lvAPC5uN4/8HvtK/ArlpSb/kEtEN+tB/PoMV9+ii19PuFicblPUNhVL/wmXk3h6z3Xb/j65HhVX76uPuSa04BoKJrJ4zgU13j7D1Z1I/hNXhUtCaEGx8jOuBaVdd9/NtUiyrjnkAdEvXLh+PH/ac0EY7DbueMhlprd8YsAllpznWYrL/IUrG3KlsRgJnCTyVcKy8vvFH3klhy9VUMZCnsXI0i/VW8SV8jDb772YF7NF1xt0q5XohgtTKraJgV1q9qxvwapq4Pe+GgneiWvKSrcLca0NCrRO6oEqvD0lvW43srG87dsPS+9b3I30ox/96EffIMeYixitSxFNpikaFDJVpmIbY6oS+7i3r9LEo3FG3wDFF8mlC3tOhRylR7il0lW5t7FsQ+T96nmfX6AltZnGxD4ZW9I0Lk3hLEw2M8LtGVqMWXJzWcL2mBast9/3SfdlcjAHC8TqFOn6sacprkqUGDJXtGJC0vK7kYSiQfbQcy1xogZcmsg2OGYlf4nLov11XDkg4Mq0ErIVwRUvRFG5hedTTGG2NhQsPuzvq+T5YI1IniZNyLnxEOxmfJFOJVcCRVBlDqkkt9BUGVYyv53LBEMwG84mFP0eTjKY2EJC+UZ1OY+aKNLMkjgiR0xLWfLNKnEeIUFa0YF/ARfbFm7vX+BsPpviXP4t/3LUkda44yJwkK8GXDqdZNO/yMVtebKw77k0LxlyES9ORaKdbh518w1gFrWnBY3hiOSlM9P0HOJuMaTNKcyjlUCRieQRlYZKMqykP+3zS6Qti6o00JNXLsog8w1ycRc2HwNL3jD6M1f9+SZKls96fKR/ALWkmhJK7WNaAAAAAElFTkSuQmCC" class="rISBZc M4dUYb" height="82" width="151" alt="" data-atf="1">
+	  </article>
+</section>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nummer 1</h1>
+    <p>Rolex<p>
+	<p>Rolex is een merk dat geen introductie nodig heeft, of u nu een horlogeliefhebber bent of een toevallige toeschouwer van de populaire cultuur. Rolex, synoniem met de term luxe horloge, is een prestigieus merk, zeer herkenbaar voor iedereen en geliefd om zijn tijdloze uiterlijk, gevoel en functie.<p>
+	<img id="wp_thbn_24" src="data:image/png;base64,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" class="rISBZc M4dUYb" height="76" width="151" alt="" data-atf="1">
+<footer>  
+ <p></p>
+ </footer>
